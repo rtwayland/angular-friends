@@ -1,4 +1,6 @@
 angular.module('friendApp').controller('FriendController', function($scope) {
+    $scope.sortProp;
+    $scope.sortDirection;
     $scope.friends = [{
             "name": "Preston McNeil",
             "pic_square": "http://free-profile-pics.com/profile-pictures/01232014/images/albert-einstein-profile-picture-133x133.PNG",
