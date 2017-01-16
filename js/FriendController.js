@@ -1,5 +1,28 @@
 angular.module('friendApp').controller('FriendController', function($scope) {
-    $scope.sortProp;
+
+    $scope.props = [
+      {
+        name: 'Name',
+        prop: 'name'
+      },
+      {
+        name: '#Friends',
+        prop: 'friend_count'
+      },
+      {
+        name: 'City',
+        prop: 'current_location.city'
+      },
+      {
+        name: 'State',
+        prop: 'current_location.state'
+      },
+      {
+        name: 'Country',
+        prop: 'current_location.country'
+      }
+    ];
+    $scope.sortProp = $scope.props[0].name;
     $scope.sortDirection;
     $scope.friends = [{
             "name": "Preston McNeil",
